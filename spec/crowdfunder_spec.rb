@@ -111,7 +111,8 @@ describe "crowdfunder sql" do
     end
 
     it '#selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category' do
-      expect(@db.execute(selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category)).to eq([["music", 40.0], ["music", 24.0], ["music", 34.0], ["music", 12.0], ["music", 40.0], ["music", 40.0], ["music", 20.0], ["music", 230.0]])
+      expect(@db.execute(selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category)).to eq([["music", 24.0], ["music", 34.0], ["music", 40.0], ["music", 12.0], ["music", 20.0], ["music", 40.0], ["music", 40.
+0], ["music", 230.0]])
     end
 
     it '#selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category' do
